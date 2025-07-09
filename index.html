@@ -69,6 +69,13 @@
         .action-button:hover {
             background-color: #0284c7; /* sky-600 */
         }
+        .info-box {
+            background-color: #e0f2fe; /* sky-100 */
+            border: 2px solid #0ea5e9; /* sky-500 */
+            border-radius: 0.5rem;
+            padding: 1.5rem;
+            margin: 2rem 0;
+        }
     </style>
 </head>
 <body class="bg-slate-50 text-slate-800">
@@ -95,6 +102,22 @@
                 地域連携推進会議（以下、本会議）は、共同生活援助事業所「まんまる」（運営：合同会社 LIVENOW）が地域社会と双方向に関わりながら、利用者の自己決定と地域共生を実現するためのプラットフォームです。本手引きは、構成員の皆さまに本会議の目的・役割・進行を共有し、安心してご参加いただくためのガイドとして作成しました。
             </p>
         </section>
+
+        <!-- 施設見学募集の案内を追加 -->
+        <div class="info-box">
+            <h3 class="text-xl font-bold text-sky-700 mb-3 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 mr-2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M12 7.5h1.5m-1.5 3h1.5m-7.5 3h7.5m-7.5 3h7.5m3-9h3.375c.621 0 1.125.504 1.125 1.125V18a2.25 2.25 0 01-2.25 2.25M16.5 7.5V18a2.25 2.25 0 002.25 2.25M16.5 7.5V4.875c0-.621-.504-1.125-1.125-1.125H4.125C3.504 3.75 3 4.254 3 4.875V18a2.25 2.25 0 002.25 2.25h13.5M6 7.5h3v3H6v-3z" />
+                </svg>
+                施設見学のご案内
+            </h3>
+            <p class="text-slate-700 mb-2">
+                施設見学は随時募集しています。実際の支援現場をご覧いただくことで、より深い理解と連携につながります。
+            </p>
+            <p class="text-slate-700">
+                お問い合わせは公式LINEより受け付けております。お気軽にご連絡ください。
+            </p>
+        </div>
 
         <section id="objectives" class="mb-12 sm:mb-16">
             <h2 class="text-2xl sm:text-3xl section-title mb-8 text-center">会議の目的</h2>
@@ -304,6 +327,28 @@
             </div>
             <p class="mt-4 text-slate-500 text-sm">*詳細チェックリストは別紙 A 参照（会議資料として配布）。オンラインフォームもご利用いただけます。</p> </section>
 
+        <!-- 参加承諾書セクションを追加 -->
+        <section id="consent-form" class="mb-12 sm:mb-16 p-6 sm:p-8 card bg-green-50 border-l-4 border-green-500">
+            <h2 class="text-2xl sm:text-3xl text-green-700 font-bold mb-6 flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon w-8 h-8 text-green-600 mr-3">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                </svg>
+                参加承諾書のご提出
+            </h2>
+            <p class="text-green-700 mb-4">
+                地域連携推進会議への参加にあたり、個人情報保護に関する同意をお願いしております。
+                以下のボタンより、オンラインで参加承諾書をご提出いただけます。
+            </p>
+            <div class="text-center">
+                <a href="https://script.google.com/macros/s/AKfycbxNXSJCHrDltbKkXb6tTR5R3unvjykbS6XeofbtlsetYWMWMMjHQGSscXbeW28b71ZR/exec?page=consent" target="_blank" class="action-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="inline-block w-5 h-5 mr-2 -ml-1">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10" />
+                    </svg>
+                    参加承諾書を提出する
+                </a>
+            </div>
+        </section>
+
         <section id="confidentiality" class="mb-12 sm:mb-16 p-6 sm:p-8 card bg-amber-50 border-l-4 border-amber-500">
             <h2 class="text-2xl sm:text-3xl text-amber-700 font-bold mb-6 flex items-center">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon w-8 h-8 text-amber-600 mr-3">
@@ -326,9 +371,8 @@
                 連絡先
             </h2>
             <div class="space-y-3 text-slate-700 text-base sm:text-lg">
-                <p><strong>管理者:</strong> 大堀 芳幸</p>
                 <p><strong>電話:</strong> <a href="tel:05018084204" class="text-sky-600 hover:underline">050‑1808‑4204</a></p>
-                <p><strong>公式 LINE:</strong> @livenow_manmaru（QR コードは別紙 B）</p>
+                <p><strong>公式 LINE:</strong> <a href="https://lin.ee/uLU3MZa" target="_blank" class="text-sky-600 hover:underline">@livenow_manmaru</a>（QR コードは別紙 B）</p>
                 <p><strong>住所:</strong> 〒177‑0045 東京都練馬区石神井台 3‑26‑8‑104</p>
             </div>
         </section>
